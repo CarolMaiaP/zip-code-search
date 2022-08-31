@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { ZipCodeResult } from './components/ZipCodeResult'
 import { ZipCodeSearch } from './components/ZipCodeSearch'
 
 
@@ -11,15 +12,7 @@ function App() {
   return (
     <div>
       <ZipCodeSearch/>
-      {Object.keys(zipCode).length > 0 && (
-        <main className='main'>
-          <h2>Cep: {zipCode.cep}</h2>
-          <span>{zipCode.logradouro}</span>
-          <span>Complemento: {zipCode.complemento}</span>
-          <span>Bairro: {zipCode.bairro}</span>
-          <span>{zipCode.localidade} - {zipCode.uf}</span>
-        </main>
-      )}
+      <ZipCodeResult/>
     </div>
   )
 }
