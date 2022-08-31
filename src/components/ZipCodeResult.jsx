@@ -1,7 +1,10 @@
-import { useState } from "react"
+import { useContext } from "react"
+import { ZipCodeContext } from "../contexts/ZipCodeContext"
+import '../App'
 
 export function ZipCodeResult(){
-  const [zipCode, setZipCode] = useState({})
+  const {input, zipCode} = useContext(ZipCodeContext)
+
   return(
     <>
       {Object.keys(zipCode).length > 0 && (
