@@ -1,15 +1,8 @@
 import styled from "styled-components";
 
 export const ContainerSearch = styled.div`
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#121212, #212b46);
-
   .title {
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: #fff;
     animation: flipTitle 2s;
   }
@@ -28,6 +21,7 @@ export const ContainerSearch = styled.div`
     padding: 15px;
     margin: 34px 0;
     display: flex;
+    justify-content: space-between;
     border-radius: 8px;
     box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
   }

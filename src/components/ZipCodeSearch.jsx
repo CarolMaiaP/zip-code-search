@@ -1,6 +1,5 @@
 import { FiSearch } from 'react-icons/fi'
 import api from '../services/api'
-import '../App.css'
 import { useContext } from 'react'
 import { ZipCodeContext } from '../contexts/ZipCodeContext'
 import { ContainerSearch } from './ZipCodeSearch.styles'

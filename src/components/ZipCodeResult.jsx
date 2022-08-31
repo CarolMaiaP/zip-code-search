@@ -1,12 +1,12 @@
 import { useContext } from "react"
 import { ZipCodeContext } from "../contexts/ZipCodeContext"
-import '../App'
+import { ContainerResult } from "./ZipCodeResult.styles"
 
 export function ZipCodeResult(){
   const {input, zipCode} = useContext(ZipCodeContext)
 
   return(
-    <>
+    <ContainerResult>
       {Object.keys(zipCode).length > 0 && (
         <main className='main'>
           <h2>Cep: {zipCode.cep}</h2>
@@ -16,6 +16,6 @@ export function ZipCodeResult(){
           <span>{zipCode.localidade} - {zipCode.uf}</span>
         </main>
       )}
-    </>
+    </ContainerResult>
   )
 }
