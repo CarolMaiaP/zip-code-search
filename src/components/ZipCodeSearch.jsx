@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import api from '../services/api'
 import '../App.css'
 import { useContext } from 'react'
 import { ZipCodeContext } from '../contexts/ZipCodeContext'
+import { ContainerSearch } from './ZipCodeSearch.styles'
 
 export function ZipCodeSearch(){
 
@@ -27,7 +27,7 @@ export function ZipCodeSearch(){
   }
 
   return(
-    <>
+    <ContainerSearch>
       <h1 className="title">Buscador CEP</h1>
 
       <div className="containerInput">
@@ -42,6 +42,6 @@ export function ZipCodeSearch(){
           <FiSearch size={25} color="#FFF"/>
         </button>
       </div>
-    </>
+    </ContainerSearch>
   )
 }
